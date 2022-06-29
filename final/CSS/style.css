@@ -1,0 +1,188 @@
+
+body{
+    background-color:#02457A;
+}
+h1{
+    top: 100%;
+    color:white;
+    font-size:  4em;
+    line-height: 72px;
+    text-align: center;
+    font-family: "Alliance No.1", "Segoe UI", Helvetica, Arial;
+
+}
+.ICONS{
+    position: relative;
+    padding-top: 0.5rem;
+    font-size: 80px; 
+    display: grid;
+    grid-gap: 1.5rem;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    max-width: 64rem;
+    margin: 9rem auto;
+    grid-auto-rows: 15rem;
+}
+
+
+
+.ICONS_A{
+padding-top: 50px;
+color:white;
+background-color:#018ABE;
+width: 320px;
+height:240px;
+font-size: 80px;
+text-align:center;
+margin: 5px;
+box-shadow: 2px 1px 4px 3px white;
+position: relative;
+top: 30px;
+font-family: "Alliance No.1", "Segoe UI", Helvetica, Arial;
+}
+
+.name{
+    font-size: 32px;
+}
+
+
+
+
+
+.ICONS_A:hover
+{
+color: aqua;
+}
+
+.login
+{
+position: relative;
+top: 30px;
+background-color: white;
+font-size: 30px;
+justify-content: center;
+text-align: center;
+width: 320px;
+height:220px;
+box-shadow: 2px 1px 4px 3px white;
+visibility: hidden;
+opacity: 0;
+transform:translateY(-3em);
+z-index: -1;
+transition:all 0.3s ease 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+}
+
+
+.ICONS_A:hover .login{
+    display:flex;
+    visibility: visible;
+    opacity: 1;
+    z-index: 1;
+    transform: translateY(0);
+    transition-delay: 0s,0s, 1s;
+  
+}
+ 
+
+.login input[type=submit]{
+    border-radius: 6px;
+    background-color: green;
+    border:solid green;
+    color:white;
+    width: 150px;
+    box-shadow: 5px 4px 5px green;
+}
+.login input[type=submit]:hover{
+    background-color: lightgreen;
+    border:solid lightgreen;
+    box-shadow: 5px 4px 5px lightgreen;
+}
+
+
+#lbl1{
+    display:block;
+    margin-bottom: -3rem;
+    
+}
+#lbl2{
+    display:block;
+    margin-bottom:-3rem;
+  
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2.5em;
+    }
+
+    .ICONS {
+        max-width: 15rem;
+        grid-row-gap: 13rem;
+    }
+
+    .ICONS_A {
+        width: 15rem;
+        height: 15rem;
+    }
+
+    .login
+    {
+        width: 15rem;
+        height: 15rem;
+    }
+    #lbl1 {
+        font-size: 1.5rem;
+    }
+
+    #lbl2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 1080px) {
+    .ICONS {
+       
+        grid-template-columns: 1fr;
+        text-align: center;
+        grid-row-gap: 13rem;
+        max-width: 20rem;
+       
+    }
+
+    .ICONS_A:hover {
+        top: -7rem;
+    }
+
+}
+
+@media (max-width: 400px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    .ICONS {
+        margin: 5rem auto;
+        max-width: 10rem;
+        grid-row-gap: 10rem;
+      
+    }
+
+    .login
+    {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .ICONS_A {
+        width: 10rem;
+        height: 15rem;
+    }
+
+    #lbl1 {
+        font-size: 1rem;
+    }
+
+    #lbl2{
+        font-size: 1rem;
+    }
+}
